@@ -76,7 +76,7 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
 ```java
     @Test
     void testDividirValidos() {
-        // Agrupamos los casos del CP1 al CP6 usando la técnica del profesor
+        // Agrupamos los casos del CP1 al CP6 
         assertAll("Divisiones con resultado válido",
             () -> assertEquals(2, Calculadora.dividir(4, 2), "CP1"),
             () -> assertEquals(-2, Calculadora.dividir(4, -2), "CP2"),
@@ -89,7 +89,7 @@ Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguie
 
     @Test
     void testDividirPorCero() {
-        // Agrupamos los casos de error (CP7 al CP9)
+        // Agrupamos los casos de error del CP7 al CP9
         assertAll("Divisiones por cero (Excepciones)",
             () -> assertThrows(OperacionNoValidaException.class, () -> Calculadora.dividir(4, 0), "CP7"),
             () -> assertThrows(OperacionNoValidaException.class, () -> Calculadora.dividir(-4, 0), "CP8"),
